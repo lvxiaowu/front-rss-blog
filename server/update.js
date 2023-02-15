@@ -42,6 +42,7 @@ function handleCommit() {
 function handleFeed() {
   rssJson = fs.readJsonSync(RSS_PATH);
   linksJson = fs.readJsonSync(LINKS_PATH);
+
   newData = {
     length: 0,
     titles: [],
@@ -53,7 +54,8 @@ function handleFeed() {
     (async () => {
       const feed = await fetch(rssItem);
       if (feed) {
-        const items = linksJson[rssIndex].items || [];
+        console.log({ feed });
+        const items = linksJson[rssIndex]?.items || [];
         const newItems = feed.items.reduce((prev, curr) => {
           const exist = items.find((el) =>
             utils.isSameLink(el.link, curr.link)

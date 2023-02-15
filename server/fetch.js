@@ -52,6 +52,7 @@ async function initFetch(rssItem, onFinish) {
   utils.log("开始 RSS: " + rssItem.title);
 
   return new Promise((resolve) => {
+    // 一旦其中一个成功，则callback返回该成功的任务的返回值
     Async.tryEach(tasks, (err, res) => {
       utils.log("完成 RSS: " + rssItem.title);
       resolve(err ? null : res);
