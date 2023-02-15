@@ -1,0 +1,31 @@
+{
+  "name": "front-rss-blog",
+  "version": "1.0.0",
+  "description": "react-admin",
+  "main": "index.js",
+  "repository": "http://172.16.200.10:8081/zswl/admin-template.git",
+  "author": "lvxiaowu",
+  "license": "MIT",
+  "scripts": {
+    "start": "admin start",
+    "build": "admin build"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@zswl/admin": "0.6.0-alpha.0",
+    "@zswl/components": "0.15.1",
+    "antd": "4.22.7",
+    "classnames": "2.3.1",
+    "jsencrypt": "^3.2.1",
+    "moment": "2.29.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "printWidth": 100
+  },
+  "devDependencies": {}
+}

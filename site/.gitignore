@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+.idea
+.vscode
+dist
+.admin
+yarn-error.log
+local.config.js
+yarn.lock
+package-lock.json
