@@ -31,9 +31,7 @@ function handleCommit() {
   Git(RESP_PATH)
     .add("./*")
     .commit("更新: " + newData.titles.join("、"))
-    .push(["-u", "origin", "master"], () =>
-      utils.logSuccess("完成抓取和上传！")
-    );
+    .push(["-u", "origin", "mian"], () => utils.logSuccess("完成抓取和上传！"));
 }
 
 /**
